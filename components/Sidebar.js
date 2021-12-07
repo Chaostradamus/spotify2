@@ -12,7 +12,7 @@ import { useRecoilState } from "recoil";
 import { playlistIdState } from "../atoms/playlistAtom";
 import useSpotify from "../hooks/useSpotify";
 
-function sidebar() {
+function Sidebar() {
   const spotifyApi = useSpotify();
   const { data: session, status } = useSession();
   const [playlists, setPlaylists] = useState([]);
@@ -81,4 +81,4 @@ function sidebar() {
   );
 }
 
-export default sidebar;
+export default Sidebar;
